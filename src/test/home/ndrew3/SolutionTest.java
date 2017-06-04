@@ -1,5 +1,9 @@
-import org.junit.Test;
+package home.ndrew3;
 
+import home.ndrew3.Solution;
+import org.junit.Test;
+import static home.ndrew3.Solution.ARRAY_IS_EMPTY;
+import static home.ndrew3.Solution.ARRAY_OVERSIZE_ERROR_CODE;
 import static org.junit.Assert.assertEquals;
 
 
@@ -7,8 +11,7 @@ import static org.junit.Assert.assertEquals;
  * Created by Андрей on 03.06.2017.
  */
 public class SolutionTest {
-    final private static int ARRAY_OVERSIZE_ERROR_CODE = -2;
-    final private static int ARRAY_IS_EMPTY = -1;
+
     Solution solution = new Solution();
 
     @Test
@@ -19,9 +22,6 @@ public class SolutionTest {
         assertEquals(4, solution.solution(array2));
 
     }
-
-
-
 
     @Test
     public void testInvalidSize(){
